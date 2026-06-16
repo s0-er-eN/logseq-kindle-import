@@ -1,3 +1,257 @@
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2026-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2026-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2026-03-17)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2026-03-16)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2026-03-15)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-11-25)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-11-23)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-11-22)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-11-04)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-11-04)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-11-03)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-11-02)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-10-29)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-10-26)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-10-20)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-10-20)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-10-19)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-09-08)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-09-07)
+
+
+### Bug Fixes
+
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#612](https://github.com/nicdun/logseq-kindle-import/issues/612)) ([fbb5e17](https://github.com/nicdun/logseq-kindle-import/commit/fbb5e178a983eab665e5a1a15757e630dd6eaff0))
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-09-07)
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
+# [1.4.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.3.0...v1.4.0) (2025-08-30)
+
+
+### Features
+
+* **language-parsing:** language issues ([5ad7643](https://github.com/nicdun/logseq-kindle-import/commit/5ad76437b88328c65a29f667c4c271cd4761865f))
+
 # [1.3.0](https://github.com/nicdun/logseq-kindle-import/compare/v1.2.2...v1.3.0) (2024-01-23)
 
 
