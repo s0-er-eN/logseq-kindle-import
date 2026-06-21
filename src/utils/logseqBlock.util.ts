@@ -26,7 +26,7 @@ export const createBlockOnCurrentPage = (
   uuid: string,
   highlight: KindleHighlight
 ): Promise<BlockEntity | null> => {
-  return logseq.Editor.appendBlockInPage(uuid, `${highlight.text}`, {
+  return logseq.Editor.appendBlockInPage(uuid, `${highlight.text.replaceAll('#', '\\#')}`, {
     properties: {
       ...(highlight.page && { page: highlight.page }),
       ...(highlight.location && { location: highlight.location }),
@@ -40,7 +40,7 @@ export const createChildHighlightBlock = (
   parentUuid: string,
   highlight: KindleHighlight
 ): Promise<BlockEntity | null> => {
-  return logseq.Editor.insertBlock(parentUuid, `${highlight.text}`, {
+  return logseq.Editor.insertBlock(parentUuid, `${highlight.text.replaceAll('#', '\\#')}`, {
     sibling: false,
     properties: {
       ...(highlight.page && { page: highlight.page }),
