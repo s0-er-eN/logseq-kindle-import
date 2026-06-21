@@ -1,0 +1,1981 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Strict//EN"
+"XHTML1-s.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en" lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <style>
+        .bodyContainer {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        
+        .notebookFor {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(119, 119, 119);
+            margin: 24px 0px 0px;
+            padding: 0px;
+        }
+        
+        .bookTitle {
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            color: #333333;
+            margin-top: 22px;
+            padding: 0px;
+        }
+        
+        .authors {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(119, 119, 119);
+            margin-top: 22px;
+            margin-bottom: 24px;
+            padding: 0px;
+        }
+    
+        .citation {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            color: #333333;
+            margin-top: 22px;
+            margin-bottom: 24px;
+            padding: 0px;
+        }
+    
+        .sectionHeading {
+            font-size: 24px;
+            font-weight: 700;
+            text-align: left;
+            color: #333333;
+            margin-top: 24px;
+            padding: 0px;
+        }
+        
+        .noteHeading {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: left;
+            color: #333333;
+            margin-top: 20px;
+            padding: 0px;
+        }
+        
+        .noteText {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: left;
+            color: #333333;
+            margin: 2px 0px 0px;
+            padding: 0px;
+        }
+        
+        .annotation_blue {
+            color: rgb(178, 205, 251);
+        }
+        
+        .annotation_orange {
+            color: #ffd7ae;
+        }
+        
+        .annotation_pink {
+            color: rgb(255, 191, 206);
+        }
+        
+        .annotation_yellow {
+            color: rgb(247, 206, 0);
+        }
+        
+        .annotation_green {
+            color: rgb(0, 169, 118);
+        }
+
+        .annotation_aqua {
+            color: rgb(0, 165, 167);
+        }
+
+        .annotation_red {
+            color: rgb(244, 100, 101);
+        }
+
+        .annotation_purple {
+            color: rgb(140, 140, 219);
+        }
+
+        .notebookGraphic {
+            margin-top: 10px;
+            text-align: left;
+        }
+        
+        .notebookGraphic img {
+            -o-box-shadow:      0px 0px 5px #888;
+            -icab-box-shadow:   0px 0px 5px #888;
+            -khtml-box-shadow:  0px 0px 5px #888;
+            -moz-box-shadow:    0px 0px 5px #888;
+            -webkit-box-shadow: 0px 0px 5px #888;
+            box-shadow:         0px 0px 5px #888; 
+            max-width: 100%;
+            height: auto;
+        }
+        
+        hr {
+            border: 0px none;
+            height: 1px;
+            background: none repeat scroll 0% 0% rgb(221, 221, 221);
+        }
+        </style>
+        <script>
+            </script>
+    </head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+                Notebookexport
+            </div>
+            <div class="bookTitle">
+                Fundamentals of Software Architecture - Mark Richards
+            </div>
+            <div class="authors">
+                Mark Richards and Neal Ford
+            </div>
+            <div class="citation">
+                
+            </div>
+            <hr />
+            <div class="sectionHeading">
+    1. Introduction
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Laws of Software Architecture > Position 507
+</div>
+<div class="noteText">
+    Everything in software architecture is a trade-off.—First Law of Software Architecture
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Laws of Software Architecture > Position 510
+</div>
+<div class="noteText">
+    If an architect thinks they have discovered something that isn’t a trade-off, more likely they just haven’t identified the trade-off yet.—Corollary 1
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Laws of Software Architecture > Position 517
+</div>
+<div class="noteText">
+    Why is more important than how.—Second Law of Software Architecture
+</div><div class="sectionHeading">
+    2. Architectural Thinking
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 533
+</div>
+<div class="noteText">
+    There are four main aspects of thinking like an architect. First, it’s understanding the difference between architecture and design and knowing how to collaborate with development teams to make architecture work. Second, it’s about having a wide breadth of technical knowledge while still maintaining a certain level of technical depth, allowing the architect to see solutions and possibilities that others do not see. Third, it’s about understanding, analyzing, and reconciling trade-offs between various solutions and technologies. Finally, it’s about understanding the importance of business drivers and how they translate to architectural concerns.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Versus Design > Position 543
+</div>
+<div class="noteText">
+    Thinking like an architect is knowing the difference between architecture and design and seeing how the two integrate closely to form solutions to business and technical problems.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Versus Design > Position 546
+</div>
+<div class="noteText">
+    an architect is responsible for things like analyzing business requirements to extract and define the architectural characteristics (“-ilities”), selecting which architecture patterns and styles would fit the problem domain, and creating components (the building blocks of the system).
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Versus Design > Position 557
+</div>
+<div class="noteText">
+    To make architecture work, both the physical and virtual barriers that exist between architects and developers must be broken down, thus forming a strong bidirectional relationship between architects and development teams. The architect and developer must be on the same virtual team to make this work,
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Versus Design > Position 562
+</div>
+<div class="noteText">
+    Figure 2-2. Making architecture work through collaboration
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Versus Design > Position 565
+</div>
+<div class="noteText">
+    So where does architecture end and design begin? It doesn’t. They are both part of the circle of life within a software project and must always be kept in synchronization with each other in order to succeed.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Technical Breadth > Position 602
+</div>
+<div class="noteText">
+    As an architect, breadth is more important than depth. Because architects must make decisions that match capabilities to technical constraints, a broad understanding of a wide variety of solutions is valuable. Thus, for an architect, the wise course of action is to sacrifice some hard-won expertise and use that time to broaden their portfolio,
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Technical Breadth > Position 616
+</div>
+<div class="noteText">
+    Developers transitioning to the architect role may have to change the way they view knowledge acquisition. Balancing their portfolio of knowledge regarding depth versus breadth is something every developer should consider throughout their career.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Technical Breadth > Position 619
+</div>
+<div class="noteText">
+    A behavioral anti-pattern commonly observed in the wild, the Frozen Caveman Anti-Pattern, describes an architect who always reverts back to their pet irrational concern for every architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Technical Breadth > Position 626
+</div>
+<div class="noteText">
+    Generally, this anti-pattern manifests in architects who have been burned in the past by a poor decision or unexpected occurrence, making them particularly cautious in the future. While risk assessment is important, it should be realistic as well. Understanding the difference between genuine versus perceived technical risk is part of the ongoing learning process for architects. Thinking like an architect requires overcoming these “frozen caveman” ideas and experiences, seeing other solutions, and asking more relevant questions.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - Analyzing Trade-Offs > Position 635
+</div>
+<div class="noteText">
+    Architecture is the stuff you can’t Google.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - Analyzing Trade-Offs > Position 642
+</div>
+<div class="noteText">
+    There are no right or wrong answers in architecture—only trade-offs.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Analyzing Trade-Offs > Position 650
+</div>
+<div class="noteText">
+    Architectural thinking requires the architect to analyze the trade-offs associated with each option and select the best one given the specific situation.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - Analyzing Trade-Offs > Position 677
+</div>
+<div class="noteText">
+    Programmers know the benefits of everything and the trade-offs of nothing. Architects need to understand both.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Analyzing Trade-Offs > Position 685
+</div>
+<div class="noteText">
+    it is very easy to wiretap into a topic, but not a queue.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Balancing Architecture and Hands-On Coding > Position 724
+</div>
+<div class="noteText">
+    The first tip in striving for a balance between hands-on coding and being a software architect is avoiding the bottleneck trap. The bottleneck trap occurs when the architect has taken ownership of code within the critical path of a project (usually the underlying framework code) and becomes a bottleneck to the team.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Balancing Architecture and Hands-On Coding > Position 729
+</div>
+<div class="noteText">
+    One way to avoid the bottleneck trap as an effective software architect is to delegate the critical path and framework code to others on the development team and then focus on coding a piece of business functionality (a service or a screen) one to three iterations down the road.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Balancing Architecture and Hands-On Coding > Position 736
+</div>
+<div class="noteText">
+    There are four basic ways an architect can still remain hands-on at work without having to “practice coding from home” (although we recommend practicing coding at home as well). The first way is to do frequent proof-of-concepts or POCs.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Balancing Architecture and Hands-On Coding > Position 744
+</div>
+<div class="noteText">
+    Our advice when doing proof-of-concept work is that, whenever possible, the architect should write the best production-quality code they can. We recommend this practice for two reasons. First, quite often, throwaway proof-of-concept code goes into the source code repository and becomes the reference architecture or guiding example for others to follow. The last thing an architect would want is for their throwaway, sloppy code to be a representation of their typical work. The second reason is that by writing production-quality proof-of-concept code, the architect gets practice writing quality, well-structured code rather than continually developing bad coding practices. Another way an architect can remain hands-on is to tackle some of the technical debt stories or architecture stories, freeing the development team up to work on the critical functional user stories.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Balancing Architecture and Hands-On Coding > Position 755
+</div>
+<div class="noteText">
+    Leveraging automation by creating simple command-line tools and analyzers to help the development team with their day-to-day tasks is another great way to maintain hands-on coding skills while making the development team more effective.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Balancing Architecture and Hands-On Coding > Position 766
+</div>
+<div class="noteText">
+    A final technique to remain hands-on as an architect is to do frequent code reviews.
+</div><div class="sectionHeading">
+    3. Modularity
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - Position 774
+</div>
+<div class="noteText">
+    95% of the words [about software architecture] are spent extolling the benefits of “modularity” and that little, if anything, is said about how to achieve it.—Glenford J. Myers (1978)
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Definition > Position 801
+</div>
+<div class="noteText">
+    Architects must be aware of how developers package things because it has important implications in architecture. For example, if several packages are tightly coupled together, reusing one of them for related work becomes more difficult.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cohesion > Position 850
+</div>
+<div class="noteText">
+    Cohesion refers to what extent the parts of a module should be contained within the same module. In other words, it is a measure of how related the parts are to one another. Ideally, a cohesive module is one where all the parts should be packaged together, because breaking them into smaller pieces would require coupling the parts together via calls between modules to achieve useful results.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cohesion > Position 855
+</div>
+<div class="noteText">
+    Computer scientists have defined a range of cohesion measures, listed here from best to worst: Functional cohesion Every part of the module is related to the other, and the module contains everything essential to function. Sequential cohesion Two modules interact, where one outputs data that becomes the input for the other. Communicational cohesion Two modules form a communication chain, where each operates on information and/ or contributes to some output. For example, add a record to the database and generate an email based on that information. Procedural cohesion Two modules must execute code in a particular order. Temporal cohesion Modules are related based on timing dependencies. For example, many systems have a list of seemingly unrelated things that must be initialized at system startup; these different tasks are temporally cohesive. Logical cohesion The data within modules is related logically but not functionally. For example, consider a module that converts information from text, serialized objects, or streams. Operations are related, but the functions are quite different. A common example of this type of cohesion exists in virtually every Java project in the form of the StringUtils package: a group of static methods that operate on String but are otherwise unrelated. Coincidental cohesion Elements in a module are not related other than being in the same source file; this represents the most negative form of cohesion.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cohesion > Position 869
+</div>
+<div class="noteText">
+    cohesion is a less precise metric than coupling.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cohesion > Position 890
+</div>
+<div class="noteText">
+    A well-known set of metrics named the Chidamber and Kemerer Object-oriented metrics suite was developed by the eponymous authors to measure particular aspects of object-oriented software systems.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cohesion > Position 916
+</div>
+<div class="noteText">
+    The LCOM metric is useful to architects who are analyzing code bases in order to move from one architectural style to another. One of the common headaches when moving architectures are shared utility classes. Using the LCOM metric can help architects find classes that are incidentally coupled and should never have been a single class to begin with.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cohesion > Position 919
+</div>
+<div class="noteText">
+    All this metric can find is structural lack of cohesion; it has no way to determine logically if particular pieces fit together. This reflects back on our Second Law of Software Architecture: prefer why over how.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Coupling > Position 924
+</div>
+<div class="noteText">
+    In 1979, Edward Yourdon and Larry Constantine published Structured Design: Fundamentals of a Discipline of Computer Program and Systems Design (Prentice-Hall), defining many core concepts, including the metrics afferent and efferent coupling. Afferent coupling measures the number of incoming connections to a code artifact (component, class, function, and so on). Efferent coupling measures the outgoing connections to other code artifacts.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Coupling > Position 934
+</div>
+<div class="noteText">
+    developers came up with several mnemonics to help out: a appears before e in the English alphabet, corresponding to incoming being before outgoing, or the observation that the letter e in efferent matches the initial letter in exit, corresponding to outgoing connections.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Abstractness, Instability, and Distance from the Main Sequence > Position 941
+</div>
+<div class="noteText">
+    Abstractness is the ratio of abstract artifacts (abstract classes, interfaces, and so on) to concrete artifacts (implementation). It represents a measure of abstractness versus implementation.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Abstractness, Instability, and Distance from the Main Sequence > Position 951
+</div>
+<div class="noteText">
+    Architects calculate abstractness by calculating the ratio of the sum of abstract artifacts to the sum of the concrete and abstract ones.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Abstractness, Instability, and Distance from the Main Sequence > Position 952
+</div>
+<div class="noteText">
+    instability, is defined as the ratio of efferent coupling to the sum of both efferent and afferent coupling,
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Abstractness, Instability, and Distance from the Main Sequence > Position 956
+</div>
+<div class="noteText">
+    The instability metric determines the volatility of a code base. A code base that exhibits high degrees of instability breaks more easily when changed because of high coupling.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Distance from the Main Sequence > Position 960
+</div>
+<div class="noteText">
+    One of the few holistic metrics architects have for architectural structure is distance from the main sequence, a derived metric based on instability and abstractness,
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Distance from the Main Sequence > Position 968
+</div>
+<div class="noteText">
+    Figure 3-2. The main sequence defines the ideal relationship between abstractness and instability The distance metric imagines an ideal relationship between abstractness and instability; classes that fall near this idealized line exhibit a healthy mixture of these two competing concerns.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Distance from the Main Sequence > Position 976
+</div>
+<div class="noteText">
+    Classes that fall too far into the upper-righthand corner enter into what architects call the zone of uselessness: code that is too abstract becomes difficult to use. Conversely, code that falls into the lower-lefthand corner enter the zone of pain: code with too much implementation and not enough abstraction becomes brittle and hard to maintain, illustrated in Figure 3-4. Figure 3-4. Zones of Uselessness and Pain
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Distance from the Main Sequence > Position 984
+</div>
+<div class="noteText">
+    Limitations of Metrics While the industry has a few code-level metrics that provide valuable insight into code bases, our tools are extremely blunt compared to analysis tools from other engineering disciplines. Even metrics derived directly from the structure of code require interpretation. For example, cyclomatic complexity (see “Cyclomatic Complexity”) measures complexity in code bases but cannot distinguish from essential complexity (because the underlying problem is complex) or accidental complexity (the code is more complex than it should be). Virtually all code-level metrics require interpretation, but it is still useful to establish baselines for critical metrics such as cyclomatic complexity so that architects can assess which type they exhibit.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - Connascence > Position 998
+</div>
+<div class="noteText">
+    Two components are connascent if a change in one would require the other to be modified in order to maintain the overall correctness of the system.—Meilir Page-Jones
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1001
+</div>
+<div class="noteText">
+    Static connascence
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1005
+</div>
+<div class="noteText">
+    Connascence of Name (CoN) Multiple components must agree on the name of an entity.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1008
+</div>
+<div class="noteText">
+    Connascence of Type (CoT) Multiple components must agree on the type of an entity.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1012
+</div>
+<div class="noteText">
+    Connascence of Meaning (CoM) or Connascence of Convention (CoC) Multiple components must agree on the meaning of particular values.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1015
+</div>
+<div class="noteText">
+    Connascence of Position (CoP) Multiple components must agree on the order of values.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1019
+</div>
+<div class="noteText">
+    Connascence of Algorithm (CoA) Multiple components must agree on a particular algorithm.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1023
+</div>
+<div class="noteText">
+    Dynamic connascence
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1025
+</div>
+<div class="noteText">
+    Connascence of Execution (CoE) The order of execution of multiple components is important.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1035
+</div>
+<div class="noteText">
+    Connascence of Timing (CoT) The timing of the execution of multiple components is important.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1037
+</div>
+<div class="noteText">
+    Connascence of Values (CoV) Occurs when several values relate on one another and must change together.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1042
+</div>
+<div class="noteText">
+    Connascence of Identity (CoI) Occurs when multiple components must reference the same entity.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1049
+</div>
+<div class="noteText">
+    Architects determine the strength of connascence by the ease with which a developer can refactor that type of coupling;
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1052
+</div>
+<div class="noteText">
+    Architects should prefer static connascence to dynamic because developers can determine it by simple source code analysis, and modern tools make it trivial to improve static connascence.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1056
+</div>
+<div class="noteText">
+    Figure 3-5. The strength on connascence provides a good refactoring
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1058
+</div>
+<div class="noteText">
+    The locality of connascence measures how proximal the modules are to each other in the code base. Proximal code (in the same module) typically has more and higher forms of connascence than more separated code (in separate modules or code bases). In other words, forms of connascence that indicate poor coupling when far apart are fine when closer together.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1062
+</div>
+<div class="noteText">
+    Developers must consider strength and locality together. Stronger forms of connascence found within the same module represent less code smell than the same connascence spread apart.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1063
+</div>
+<div class="noteText">
+    The degree of connascence relates to the size of its impact—does it impact a few classes or many? Lesser degrees of connascence damage code bases less. In other words, having high dynamic connascence isn’t terrible if you only have a few modules. However, code bases tend to grow, making a small problem correspondingly bigger.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Connascence > Position 1066
+</div>
+<div class="noteText">
+    guidelines for using connascence to improve systems modularity: Minimize overall connascence by breaking the system into encapsulated elements Minimize any remaining connascence that crosses encapsulation boundaries Maximize the connascence within encapsulation boundaries
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - Connascence > Position 1072
+</div>
+<div class="noteText">
+    Rule of Degree: convert strong forms of connascence into weaker forms of connascence Rule of Locality: as the distance between software elements increases, use weaker forms of connascence
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Unifying Coupling and Connascence Metrics > Position 1083
+</div>
+<div class="noteText">
+    Figure 3-6. Unifying coupling and connascence The problems with 1990s connascence
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Unifying Coupling and Connascence Metrics > Position 1086
+</div>
+<div class="noteText">
+    these measures look at details at a low level of code, focusing on code quality and hygiene than necessarily architectural structure.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Unifying Coupling and Connascence Metrics > Position 1090
+</div>
+<div class="noteText">
+    it doesn’t really address a fundamental decision that many modern architects must make—synchronous or asynchronous communication in distributed architectures like microservices?
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Unifying Coupling and Connascence Metrics > Position 1091
+</div>
+<div class="noteText">
+    After we discuss the scope of architecture characteristics in Chapter 7, we’ll introduce new ways to think about modern connascence.
+</div><div class="sectionHeading">
+    4. Architecture Characteristics Defined
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 1109
+</div>
+<div class="noteText">
+    Figure 4-1. A software solution consists of both domain requirements and architectural characteristics
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 1119
+</div>
+<div class="noteText">
+    We prefer architecture characteristics because it describes concerns critical to the success of the architecture, and therefore the system as a whole, without discounting its importance. An architecture characteristic meets three criteria: Specifies a nondomain design consideration Influences some structural aspect of the design Is critical or important to application success
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 1125
+</div>
+<div class="noteText">
+    Figure 4-2. The differentiating features of architecture characteristics
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 1128
+</div>
+<div class="noteText">
+    Specifies a nondomain design consideration When designing an application, the requirements specify what the application should do; architecture characteristics specify operational and design criteria for success, concerning how to implement the requirements and why certain choices were made.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 1134
+</div>
+<div class="noteText">
+    Influences some structural aspect of the design The primary reason architects try to describe architecture characteristics on projects concerns design considerations: does this architecture characteristic require special structural consideration to succeed?
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 1146
+</div>
+<div class="noteText">
+    Critical or important to application success Applications could support a huge number of architecture characteristics… but shouldn’t. Support for each architecture characteristic adds complexity to the design. Thus, a critical job for architects lies in choosing the fewest architecture characteristics rather than the most possible. We further subdivide architecture characteristics into implicit versus explicit architecture characteristics. Implicit ones rarely appear in requirements, yet they’re necessary for project success. For example, availability, reliability, and security underpin virtually all applications, yet they’re rarely specified in design documents. Architects must use their knowledge of the problem domain to uncover these architecture characteristics during the analysis phase.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Operational Architecture Characteristics > Position 1171
+</div>
+<div class="noteText">
+    Operational Architecture Characteristics
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Structural Architecture Characteristics > Position 1196
+</div>
+<div class="noteText">
+    Structural Architecture Characteristics
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cross-Cutting Architecture Characteristics > Position 1221
+</div>
+<div class="noteText">
+    Cross-Cutting Architecture Characteristics
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cross-Cutting Architecture Characteristics > Position 1278
+</div>
+<div class="noteText">
+    following are some of the ISO definitions:
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cross-Cutting Architecture Characteristics > Position 1332
+</div>
+<div class="noteText">
+    The last item in the ISO list addresses the functional aspects of software, which we do not believe belongs in this list: Functional suitability
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cross-Cutting Architecture Characteristics > Position 1336
+</div>
+<div class="noteText">
+    Functional completeness
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cross-Cutting Architecture Characteristics > Position 1337
+</div>
+<div class="noteText">
+    Functional correctness
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cross-Cutting Architecture Characteristics > Position 1338
+</div>
+<div class="noteText">
+    Functional appropriateness
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cross-Cutting Architecture Characteristics > Position 1339
+</div>
+<div class="noteText">
+    These are not architecture characteristics but rather the motivational requirements to build the software. This illustrates how thinking about the relationship between architecture characteristics and the problem domain has evolved.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Cross-Cutting Architecture Characteristics > Position 1346
+</div>
+<div class="noteText">
+    As much as we’d like, we can’t impose a standard nomenclature on the software development world. However, we do follow and recommend the advice from domain-driven design to establish and use a ubiquitous language amongst fellow employees to help ensure fewer term-based misunderstandings.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Trade-Offs and Least Worst Architecture > Position 1351
+</div>
+<div class="noteText">
+    Applications can only support a few of the architecture characteristics we’ve listed for a variety of reasons. First, each of the supported characteristics requires design effort and perhaps structural support. Second, the bigger problem lies with the fact that each architecture characteristic often has an impact on others.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Trade-Offs and Least Worst Architecture > Position 1362
+</div>
+<div class="noteText">
+    Each architecture characteristic that an architect designs support for potentially complicates the overall design.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Trade-Offs and Least Worst Architecture > Position 1365
+</div>
+<div class="noteText">
+    Tip Never shoot for the best architecture, but rather the least worst architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Trade-Offs and Least Worst Architecture > Position 1368
+</div>
+<div class="noteText">
+    architects should strive to design architecture to be as iterative as possible. If you can make changes to the architecture more easily, you can stress less about discovering the exact correct thing in the first attempt.
+</div><div class="sectionHeading">
+    5. Identifying Architectural Characteristics
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 1373
+</div>
+<div class="noteText">
+    Identifying the driving architectural characteristics is one of the first steps in creating an architecture or determining the validity of an existing architecture. Identifying the correct architectural characteristics (“-ilities”) for a given problem or application requires an architect to not only understand the domain problem, but also collaborate with the problem domain stakeholders to determine what is truly important from a domain perspective.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Extracting Architecture Characteristics from Domain Concerns > Position 1385
+</div>
+<div class="noteText">
+    Understanding the key domain goals and domain situation allows an architect to translate those domain concerns to “-ilities,” which then forms the basis for correct and justifiable architecture decisions. One tip when collaborating with domain stakeholders to define the driving architecture characteristics is to work hard to keep the final list as short as possible. A common anti-pattern in architecture entails trying to design a generic architecture, one that supports all the architecture characteristics.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Extracting Architecture Characteristics from Domain Concerns > Position 1393
+</div>
+<div class="noteText">
+    Don’t obsess over the number of characteristics, but rather the motivation to keep design simple.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Extracting Architecture Characteristics from Domain Concerns > Position 1403
+</div>
+<div class="noteText">
+    Many architects and domain stakeholders want to prioritize the final list of architecture characteristics that the application or system must support. While this is certainly desirable, in most cases it is a fool’s errand and will not only waste time, but also produce a lot of unnecessary frustration and disagreement with the key stakeholders. Rarely will all stakeholders agree on the priority of each and every characteristic. A better approach is to have the domain stakeholders select the top three most important characteristics from the final list (in any order).
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Extracting Architecture Characteristics from Domain Concerns > Position 1414
+</div>
+<div class="noteText">
+    Fortunately, there is usually a translation from domain concerns to architecture characteristics. Table 5-1 shows some of the more common domain concerns and the corresponding “-ilities” that support them.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Extracting Architecture Characteristics from Domain Concerns > Position 1430
+</div>
+<div class="noteText">
+    One important thing to note is that agility does not equal time to market. Rather, it is agility + testability + deployability. This is a trap many architects fall into when translating domain concerns.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Extracting Architecture Characteristics from Requirements > Position 1478
+</div>
+<div class="noteText">
+    Neal updated the format a few years later on his blog
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Extracting Architecture Characteristics from Requirements > Position 1482
+</div>
+<div class="noteText">
+    We encourage burgeoning architects to use the site to do their own kata exercise. Anyone can host a brown-bag lunch where a team of aspiring architects can solve a problem and get an experienced architect to evaluate the design and trade-off analysis, either on the spot or from a short analysis after the fact. The design won’t be elaborate because the exercise is timeboxed. Team members ideally get feedback from the experienced architecture about missed trade-offs and alternative designs.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - Implicit Characteristics > Position 1602
+</div>
+<div class="noteText">
+    There are no wrong answers in architecture, only expensive ones.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Implicit Characteristics > Position 1631
+</div>
+<div class="noteText">
+    Architects must remember: there is no best design in architecture, only a least worst collection of trade-offs.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Implicit Characteristics > Position 1632
+</div>
+<div class="noteText">
+    toward trying to find the simplest required sets. A useful exercise once the team has made a first pass at identifying the architecture characteristics is to try to determine the least important one—if you must eliminate one, which would it be?
+</div><div class="sectionHeading">
+    6. Measuring and Governing Architecture Characteristics
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Structural Measures > Position 1738
+</div>
+<div class="noteText">
+    Some of the key aspects of CC for architects to monitor: are functions complex because of the problem domain or because of poor coding? Alternatively, is the code partitioned poorly?
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Process Measures > Position 1764
+</div>
+<div class="noteText">
+    teams can measure deployability via a variety of metrics: percentage of successful to failed deployments, how long deployments take, issues/ bugs raised by deployments, and a host of others.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Process Measures > Position 1766
+</div>
+<div class="noteText">
+    Many of these measures come down to team priorities and goals.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Fitness Functions > Position 1808
+</div>
+<div class="noteText">
+    Architecture fitness function Any mechanism that provides an objective integrity assessment of some architecture characteristic or combination of architecture characteristics
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Fitness Functions > Position 1814
+</div>
+<div class="noteText">
+    Figure 6-2. The mechanisms of fitness functions
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Fitness Functions > Position 1915
+</div>
+<div class="noteText">
+    Architects must ensure that developers understand the purpose of the fitness function before imposing it on them.
+</div><div class="sectionHeading">
+    7. Scope of Architecture Characteristics
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Coupling and Connascence > Position 2032
+</div>
+<div class="noteText">
+    Connascence Two components are connascent if a change in one would require the other to be modified in order to maintain the overall correctness of the system
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Architectural Quanta and Granularity > Position 2055
+</div>
+<div class="noteText">
+    Architecture quantum An independently deployable artifact with high functional cohesion and synchronous connascence
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Architectural Quanta and Granularity > Position 2069
+</div>
+<div class="noteText">
+    High functional cohesion implies that an architecture quantum does something purposeful. This distinction matters little in traditional monolithic applications with a single database. However, in microservices architectures, developers typically design each service to match a single workflow (a bounded context, as described in “Domain-Driven Design’s Bounded Context”), thus exhibiting high functional cohesion. Synchronous connascence Synchronous connascence implies synchronous calls within an application context or between distributed services that form this architecture quantum.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architectural Quanta and Granularity > Position 2083
+</div>
+<div class="noteText">
+    Figure 7-1. Adding quantum connascence to the unified diagram
+</div><div class="sectionHeading">
+    8. Component-Based Thinking
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Component Scope > Position 2221
+</div>
+<div class="noteText">
+    Figure 8-1. Different varieties of components
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Component Scope > Position 2230
+</div>
+<div class="noteText">
+    Components form the fundamental modular building block in architecture, making them a critical consideration for architects. In fact, one of the primary decisions an architect must make concerns the top-level partitioning of components in the architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architect Role > Position 2242
+</div>
+<div class="noteText">
+    Virtually all the details we cover in this book exist independently from whatever software development process teams use: architecture is independent from the development process. The primary exception to this rule entails the engineering practices pioneered in the various flavors of Agile software development, particularly in the areas of deployment and automating governance.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architect Role > Position 2248
+</div>
+<div class="noteText">
+    Generally the component is the lowest level of the software system an architect interacts directly with, with the exception of many of the code quality metrics discussed in Chapter 6 that affect code bases holistically. Components consist of classes or functions (depending on the implementation platform), whose design falls under the responsibility of tech leads or developers. It’s not that architects shouldn’t involve themselves in class design (particularly when discovering or applying design patterns), but they should avoid micromanaging each decision from top to bottom in the system. If architects never allow other roles to make decisions of consequence, the organization will struggle with empowering the next generation of architects. An architect must identify components as one of the first tasks on a new project.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - Architecture Partitioning > Position 2292
+</div>
+<div class="noteText">
+    Conway’s law: Organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Partitioning > Position 2331
+</div>
+<div class="noteText">
+    Figure 8-5. Where domains/ workflows appear in technical-and domain-partitioned architectures
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Partitioning > Position 2338
+</div>
+<div class="noteText">
+    Neither of these styles is more correct than the other—refer to the First Law of Software Architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Component Identification Flow > Position 2403
+</div>
+<div class="noteText">
+    Figure 8-8. Component identification cycle
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Discovering Components > Position 2487
+</div>
+<div class="noteText">
+    architects identify actors who perform activities with the application and the actions those actors may perform.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Discovering Components > Position 2496
+</div>
+<div class="noteText">
+    In event storming, the architect assumes the project will use messages and/ or events to communicate between the various components. To that end, the team tries to determine which events occur in the system based on requirements and identified roles, and build components around those event and message handlers.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Discovering Components > Position 2502
+</div>
+<div class="noteText">
+    The workflow approach models the components around workflows, much like event storming, but without the explicit constraints of building a message-based system. A workflow approach identifies the key roles, determines the kinds of workflows these roles engage in, and builds components around the identified activities.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Case Study: Going, Going, Gone: Discovering Components > Position 2561
+</div>
+<div class="noteText">
+    As an architect, don’t obsess over finding the one true design, because many will suffice (and less likely overengineered). Rather, try to objectively assess the trade-offs between different design decisions, and choose the one that has the least worst set of trade-offs.
+</div><div class="sectionHeading">
+    II. Architecture Styles
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Position 2598
+</div>
+<div class="noteText">
+    We define an architecture style as the overarching structure of how the user interface and backend source code are organized (such as within layers of a monolithic deployment or separately deployed services) and how that source code interacts with a datastore. Architecture patterns, on the other hand, are lower-level design structures that help form specific solutions within an architecture style (such as how to achieve high scalability or high performance within a set of operations or between sets of services).
+</div><div class="sectionHeading">
+    9. Foundations
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Big Ball of Mud > Position 2627
+</div>
+<div class="noteText">
+    A Big Ball of Mud is a haphazardly structured, sprawling, sloppy, duct-tape-and-baling-wire, spaghetti-code jungle. These systems show unmistakable signs of unregulated growth, and repeated, expedient repair. Information is shared promiscuously among distant elements of the system, often to the point where nearly all the important information becomes global or duplicated. The overall structure of the system may never have been well defined. If it was, it may have eroded beyond recognition. Programmers with a shred of architectural sensibility shun these quagmires. Only those who are unconcerned about architecture, and, perhaps, are comfortable with the inertia of the day-to-day chore of patching the holes in these failing dikes, are content to work on such systems.—Brian Foote and Joseph Yoder
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Monolithic Versus Distributed Architectures > Position 2725
+</div>
+<div class="noteText">
+    Distributed architecture styles, while being much more powerful in terms of performance, scalability, and availability than monolithic architecture styles, have significant trade-offs for this power.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Monolithic Versus Distributed Architectures > Position 2732
+</div>
+<div class="noteText">
+    Fallacy #1: The Network Is Reliable
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Monolithic Versus Distributed Architectures > Position 2746
+</div>
+<div class="noteText">
+    Fallacy #2: Latency Is Zero
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Monolithic Versus Distributed Architectures > Position 2760
+</div>
+<div class="noteText">
+    Knowing the average latency is important, but even more important is also knowing the 95th to 99th percentile. While an average latency might yield only 60 milliseconds (which is good), the 95th percentile might be 400 milliseconds! It’s usually this “long tail” latency that will kill performance in a distributed architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Monolithic Versus Distributed Architectures > Position 2765
+</div>
+<div class="noteText">
+    Fallacy #3: Bandwidth Is Infinite
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Monolithic Versus Distributed Architectures > Position 2786
+</div>
+<div class="noteText">
+    Stamp coupling can be resolved in the following ways: Create private RESTful API endpoints Use field selectors in the contract Use GraphQL to decouple contracts Use value-driven contracts with consumer-driven contracts (CDCs) Use internal messaging endpoints Regardless of the technique used, ensuring that the minimal amount of data is passed between services or systems in a distributed architecture is the best way to address this fallacy. Fallacy #4: The Network Is Secure
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Fallacy #5: The Topology Never Changes > Position 2803
+</div>
+<div class="noteText">
+    Fallacy #5: The Topology Never Changes
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Fallacy #6: There Is Only One Administrator > Position 2818
+</div>
+<div class="noteText">
+    Fallacy #6: There Is Only One Administrator
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Fallacy #7: Transport Cost Is Zero > Position 2831
+</div>
+<div class="noteText">
+    Fallacy #7: Transport Cost Is Zero
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Fallacy #7: Transport Cost Is Zero > Position 2841
+</div>
+<div class="noteText">
+    Distributed architectures cost significantly more than monolithic architectures, primarily due to increased needs for additional hardware, servers, gateways, firewalls, new subnets, proxies, and so on.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Fallacy #8: The Network Is Homogeneous > Position 2845
+</div>
+<div class="noteText">
+    Fallacy #8: The Network Is Homogeneous
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Other Distributed Considerations > Position 2867
+</div>
+<div class="noteText">
+    Distributed logging Performing root-cause analysis to determine why a particular order was dropped is very difficult and time-consuming in a distributed architecture due to the distribution of application and system logs. In a monolithic application there is typically only one log, making it easier to trace a request and determine the issue. However, distributed architectures contain dozens to hundreds of different logs, all located in a different place and all with a different format, making it difficult to track down a problem.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Other Distributed Considerations > Position 2875
+</div>
+<div class="noteText">
+    Distributed transactions Architects and developers take transactions for granted in a monolithic architecture world because they are so straightforward and easy to manage. Standard commits and rollbacks executed from persistence frameworks leverage ACID (atomicity, consistency, isolation, durability) transactions to guarantee that the data is updated in a correct way to ensure high data consistency and integrity. Such is not the case with distributed architectures.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Other Distributed Considerations > Position 2895
+</div>
+<div class="noteText">
+    Contract maintenance and versioning
+</div><div class="sectionHeading">
+    10. Layered Architecture Style
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Topology > Position 2950
+</div>
+<div class="noteText">
+    This separation of concerns concept within the layered architecture style makes it easy to build effective roles and responsibility models within the architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Topology > Position 2955
+</div>
+<div class="noteText">
+    The layered architecture is a technically partitioned architecture (as opposed to a domain-partitioned architecture). Groups of components, rather than being grouped by domain (such as customer), are grouped by their technical role in the architecture (such as presentation or business). As a result, any particular business domain is spread throughout all of the layers of the architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Layers of Isolation > Position 2964
+</div>
+<div class="noteText">
+    Layers of Isolation Each layer in the layered architecture style can be either closed or open. A closed layer means that as a request moves top-down from layer to layer, the request cannot skip any layers, but rather must go through the layer immediately below it to get to the next layer (see Figure 10-3).
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Adding Layers > Position 2990
+</div>
+<div class="noteText">
+    While closed layers facilitate layers of isolation and therefore help isolate change within the architecture, there are times when it makes sense for certain layers to be open. For example, suppose there are shared objects within the business layer that contain common functionality for business components (such as date and string utility classes, auditing classes, logging classes, and so on).
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Adding Layers > Position 3008
+</div>
+<div class="noteText">
+    Figure 10-5. Adding a new services layer to the architecture Leveraging the concept of open and closed layers helps define the relationship between architecture layers and request flows.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Adding Layers > Position 3011
+</div>
+<div class="noteText">
+    Failure to document or properly communicate which layers in the architecture are open and closed (and why) usually results in tightly coupled and brittle architectures that are very difficult to test, maintain, and deploy.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Other Considerations > Position 3017
+</div>
+<div class="noteText">
+    when using this technique, be sure to keep reuse at a minimum and keep object hierarchies (depth of inheritance tree) fairly shallow so as to maintain a good level of modularity. This will help facilitate the move to another architecture style later on. One thing to watch out for with the layered architecture is the architecture sinkhole anti-pattern. This anti-pattern occurs when requests move from layer to layer as simple pass-through processing with no business logic performed within each layer. For example, suppose the presentation layer responds to a simple
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Other Considerations > Position 3027
+</div>
+<div class="noteText">
+    Every layered architecture will have at least some scenarios that fall into the architecture sinkhole anti-pattern. The key to determining whether the architecture sinkhole anti-pattern is at play is to analyze the percentage of requests that fall into this category. The 80-20 rule is usually a good practice to follow. For example, it is acceptable if only 20 percent of the requests are sinkholes. However, if 80 percent of the requests are sinkholes, it a good indicator that the layered architecture is not the correct architecture style for the problem domain.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Why Use This Architecture Style > Position 3033
+</div>
+<div class="noteText">
+    The layered architecture style is a good choice for small, simple applications or websites. It is also a good architecture choice, particularly as a starting point, for situations with very tight budget and time constraints.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Why Use This Architecture Style > Position 3037
+</div>
+<div class="noteText">
+    good choice when an architect is still analyzing business needs and requirements and is unsure which architecture style would be best. As applications using the layered architecture style grow, characteristics like maintainability, agility, testability, and deployability are adversely affected. For this reason, large applications and systems using the layered architecture might be better suited for other, more modular architecture styles.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Characteristics Ratings > Position 3049
+</div>
+<div class="noteText">
+    Figure 10-6. Layered architecture characteristics ratings
+</div><div class="sectionHeading">
+    11. Pipeline Architecture Style
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Characteristics Ratings > Position 3188
+</div>
+<div class="noteText">
+    Figure 11-3. Pipeline architecture characteristics ratings
+</div><div class="sectionHeading">
+    12. Microkernel Architecture Style
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Topology > Position 3234
+</div>
+<div class="noteText">
+    Figure 12-1. Basic components of the microkernel architecture style
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Characteristics Ratings > Position 3473
+</div>
+<div class="noteText">
+    Figure 12-8. Microkernel architecture characteristics ratings
+</div><div class="sectionHeading">
+    13. Service-Based Architecture Style
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Topology > Position 3530
+</div>
+<div class="noteText">
+    Figure 13-1. Basic topology of the service-based architecture style
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Characteristics Ratings > Position 3689
+</div>
+<div class="noteText">
+    Figure 13-9. Service-based architecture characteristics ratings
+</div><div class="sectionHeading">
+    14. Event-Driven Architecture Style
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 3774
+</div>
+<div class="noteText">
+    The event-driven architecture style is a popular distributed asynchronous architecture style used to produce highly scalable and high-performance applications. It is also highly adaptable and can be used for small applications and as well as large, complex ones. Event-driven architecture is made up of decoupled event processing components that asynchronously receive and process events. It can be used as a standalone architecture style or embedded within other architecture styles (such as an event-driven microservices architecture).
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Broker Topology > Position 3824
+</div>
+<div class="noteText">
+    Figure 14-2. Broker topology
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Broker Topology > Position 3832
+</div>
+<div class="noteText">
+    Figure 14-3. Notification event is sent but ignored This is a good example of architectural extensibility. While it may seem like a waste of resources sending messages that are ignored, it is not. Suppose a new requirement comes along to analyze emails that have been sent to customers. This new event processor can be added to the overall system with minimal effort because the email information is available via the email topic to the new analyzer without having to add any additional infrastructure or apply any changes to other event processors.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Broker Topology > Position 3892
+</div>
+<div class="noteText">
+    Table 14-1. Trade-offs of the broker topology Advantages Disadvantages Highly decoupled event processors Workflow control High scalability Error handling High responsiveness Recoverability High performance Restart capabilities High fault tolerance Data inconsistency
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Mediator Topology > Position 3918
+</div>
+<div class="noteText">
+    Figure 14-5. Mediator topology
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Mediator Topology > Position 3955
+</div>
+<div class="noteText">
+    Figure 14-6. Delegating the event to the appropriate type of event mediator
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Mediator Topology > Position 4024
+</div>
+<div class="noteText">
+    Table 14-2. Trade-offs of the mediator topology Advantages Disadvantages Workflow control More coupling of event processors Error handling Lower scalability Recoverability Lower performance Restart capabilities Lower fault tolerance Better data consistency Modeling complex workflows
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Error Handling > Position 4097
+</div>
+<div class="noteText">
+    Figure 14-14. Workflow event pattern of reactive architecture
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Preventing Data Loss > Position 4183
+</div>
+<div class="noteText">
+    Figure 14-17. Preventing data loss within an event-driven architecture
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Choosing Between Request-Based and Event-Based > Position 4251
+</div>
+<div class="noteText">
+    We recommend choosing the request-based model for well-structured, data-driven requests (such as retrieving customer profile data) when certainty and control over the workflow is needed. We recommend choosing the event-based model for flexible, action-based events that require high levels of responsiveness and scale, with complex and dynamic user processing.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Choosing Between Request-Based and Event-Based > Position 4256
+</div>
+<div class="noteText">
+    Table 14-3. Trade-offs of the event-driven model Advantages over request-based Trade-offs Better response to dynamic user content Only supports eventual consistency Better scalability and elasticity Less control over processing flow Better agility and change management Less certainty over outcome of event flow Better adaptability and extensibility Difficult to test and debug Better responsiveness and performance Better real-time decision making Better reaction to situational awareness
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Characteristics Ratings > Position 4287
+</div>
+<div class="noteText">
+    Figure 14-22. Event-driven architecture characteristics ratings
+</div><div class="sectionHeading">
+    15. Space-Based Architecture Style
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Characteristics Ratings > Position 4780
+</div>
+<div class="noteText">
+    Figure 15-15. Space-based architecture characteristics ratings
+</div><div class="sectionHeading">
+    16. Orchestration-Driven Service-Oriented Architecture
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Characteristics Ratings > Position 4967
+</div>
+<div class="noteText">
+    Figure 16-5. Ratings for service-oriented architecture
+</div><div class="sectionHeading">
+    17. Microservices Architecture
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - Granularity > Position 5063
+</div>
+<div class="noteText">
+    The term “microservice” is a label, not a description.—Martin Fowler
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Characteristics Ratings > Position 5315
+</div>
+<div class="noteText">
+    Figure 17-13. Ratings for microservices
+</div><div class="sectionHeading">
+    18. Choosing the Appropriate Architecture Style
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Decision Criteria > Position 5394
+</div>
+<div class="noteText">
+    Architects should go into the design decision comfortable with the following things: The domain
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Decision Criteria > Position 5397
+</div>
+<div class="noteText">
+    Architecture characteristics that impact structure
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Decision Criteria > Position 5398
+</div>
+<div class="noteText">
+    Data architecture
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Decision Criteria > Position 5401
+</div>
+<div class="noteText">
+    Organizational factors
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Decision Criteria > Position 5404
+</div>
+<div class="noteText">
+    Knowledge of process, teams, and operational concerns
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Decision Criteria > Position 5406
+</div>
+<div class="noteText">
+    Domain/ architecture isomorphism
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Decision Criteria > Position 5416
+</div>
+<div class="noteText">
+    Taking all these things into account, the architect must make several determinations: Monolith versus distributed
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Decision Criteria > Position 5422
+</div>
+<div class="noteText">
+    Where should data live?
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Decision Criteria > Position 5426
+</div>
+<div class="noteText">
+    What communication styles between services—synchronous or asynchronous?
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Decision Criteria > Position 5436
+</div>
+<div class="noteText">
+    Use synchronous by default, asynchronous when necessary.
+</div><div class="sectionHeading">
+    19. Architecture Decisions
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Decision Anti-Patterns > Position 5578
+</div>
+<div class="noteText">
+    The three major architecture anti-patterns that can (and usually do) emerge when making architecture decisions are the Covering Your Assets anti-pattern, the Groundhog Day anti-pattern, and the Email-Driven Architecture anti-pattern.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Covering Your Assets Anti-Pattern > Position 5585
+</div>
+<div class="noteText">
+    Covering Your Assets anti-pattern. This anti-pattern occurs when an architect avoids or defers making an architecture decision out of fear of making the wrong choice. There are two ways to overcome this anti-pattern. The first is to wait until the last responsible moment to make an important architecture decision.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Covering Your Assets Anti-Pattern > Position 5591
+</div>
+<div class="noteText">
+    The second way to avoid this anti-pattern is to continually collaborate with development teams to ensure that the decision you made can be implemented as expected.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Groundhog Day Anti-Pattern > Position 5607
+</div>
+<div class="noteText">
+    The Groundhog Day anti-pattern occurs when people don’t know why a decision was made, so it keeps getting discussed over and over and over. The Groundhog Day anti-pattern gets it name from the Bill Murray movie Groundhog Day, where it was February 2 over and over every day. The Groundhog Day anti-pattern occurs because once an architect makes an architecture decision, they fail to provide a justification for the decision (or a complete justification). When justifying architecture decisions it is important to provide both technical and business justifications for your decision.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Groundhog Day Anti-Pattern > Position 5621
+</div>
+<div class="noteText">
+    Four of the most common business justifications include cost, time to market, user satisfaction, and strategic positioning.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Email-Driven Architecture Anti-Pattern > Position 5633
+</div>
+<div class="noteText">
+    The Email-Driven Architecture anti-pattern is where people lose, forget, or don’t even know an architecture decision has been made and therefore cannot possibly implement that architecture decision. This anti-pattern is all about effectively communicating your architecture decisions. Email is a great tool for communication, but it makes a poor document repository system.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Email-Driven Architecture Anti-Pattern > Position 5638
+</div>
+<div class="noteText">
+    The first rule of communicating architecture decisions is to not include the architecture decision in the body of an email.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Email-Driven Architecture Anti-Pattern > Position 5641
+</div>
+<div class="noteText">
+    A better approach is to mention only the nature and context of the decision in the body of the email and provide a link to the single system of record for the actual architecture decision and corresponding details (whether it be a link to a wiki page or a document in a filesystem). The second rule of effectively communicating architecture decisions is to only notify those people who really care about the architecture decision. One effective technique is to write the body of the email as follows: “Hi Sandra, I’ve made an important decision regarding communication between services that directly impacts you. Please see the decision using the following link… ”
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecturally Significant > Position 5656
+</div>
+<div class="noteText">
+    If an architect makes a decision to use a particular technology because it directly supports a particular architecture characteristic (such as performance or scalability), then it’s an architecture decision.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecturally Significant > Position 5663
+</div>
+<div class="noteText">
+    The structure refers to decisions that impact the patterns or styles of architecture being used.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecturally Significant > Position 5666
+</div>
+<div class="noteText">
+    structure of the application. The nonfunctional characteristics are the architecture characteristics (“-ilities”) that are important for the application or system being developed or maintained.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecturally Significant > Position 5670
+</div>
+<div class="noteText">
+    Dependencies refer to coupling points between components and/ or services within the system, which in turn impact overall scalability, modularity, agility, testability, reliability, and so on. Interfaces refer to how services and components are accessed and orchestrated, usually through a gateway, integration hub, service bus, or API proxy.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecturally Significant > Position 5676
+</div>
+<div class="noteText">
+    Interfaces impact others using the system and hence are architecturally significant. Finally, construction techniques refer to decisions about platforms, frameworks, tools, and even processes that, although technical in nature, might impact some aspect of the architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Decision Records > Position 5680
+</div>
+<div class="noteText">
+    One of the most effective ways of documenting architecture decisions is through Architecture Decision Records (ADRs). ADRs were first evangelized by Michael Nygard in a blog post
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Decision Records > Position 5691
+</div>
+<div class="noteText">
+    open source tool for ADRs called ADR-tools.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architecture Decision Records > Position 5692
+</div>
+<div class="noteText">
+    including the numbering schemes, locations, and superseded logic. Micha Kops, a software engineer from Germany, has written a blog post about using ADR-tools that provides some great examples on how they can be used to manage architecture decision records.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Basic Structure > Position 5700
+</div>
+<div class="noteText">
+    We usually add two additional sections as part of the basic structure: Compliance and Notes. This basic structure (as illustrated in Figure 19-1) can be extended to include any other section deemed needed, providing the template is kept both consistent and concise. A good example of this might be to add an Alternatives section if necessary to provide an analysis of all the other possible alternative solutions.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Basic Structure > Position 5728
+</div>
+<div class="noteText">
+    If an architect wishes to send out a draft ADR for comments (which is sometimes a good idea when the architect wants to validate various assumptions and assertions with a larger audience of stakeholders), we recommend creating a new status named Request for Comments (or RFC) and specify a deadline date when that review would be complete.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Basic Structure > Position 5741
+</div>
+<div class="noteText">
+    Level of effort costs can be estimated by multiplying the estimated number of hours to implement the architecture decision by the company’s standard Full-Time Equivalency (FTE) rate. The project owner or project manager usually has the FTE amount. If the cost of the architecture decision exceeds a certain amount, then it must be set to Proposed status and approved by someone else. If the architecture decision impacts other teams or systems or has any sort of security implication, then it cannot be self-approved by the architect and must be approved by a higher-level governing body or lead architect.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Basic Structure > Position 5759
+</div>
+<div class="noteText">
+    The Decision section of the ADR contains the architecture decision, along with a full justification for the decision. Michael Nygard introduced a great way of stating an architecture decision by using a very affirmative, commanding voice rather than a passive one. For example, the decision to use asynchronous messaging between services would read “we will use asynchronous messaging between services.” This is a much better way of stating a decision as opposed to “I think asynchronous messaging between services would be the best choice.” Notice here it is not clear what the decision is or even if a decision has even been made—only the opinion of the architect is stated.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Basic Structure > Position 5776
+</div>
+<div class="noteText">
+    The Consequences section of an ADR is another very powerful section. This section documents the overall impact of an architecture decision. Every architecture decision an architect makes has some sort of impact, both good and bad. Having to specify the impact of an architecture decision forces the architect to think about whether those impacts outweigh the benefits of the decision. Another good use of this section is to document the trade-off analysis associated with the architecture decision.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Basic Structure > Position 5789
+</div>
+<div class="noteText">
+    The compliance section of an ADR is not one of the standard sections in an ADR, but it’s one we highly recommend adding. The Compliance section forces the architect to think about how the architecture decision will be measured and governed from a compliance perspective. The architect must decide whether the compliance check for this decision must be manual or if it can be automated using a fitness function.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Basic Structure > Position 5821
+</div>
+<div class="noteText">
+    Another section that is not part of a standard ADR but that we highly recommend adding is the Notes section. This section includes various metadata about the ADR, such as the following: Original author Approval date Approved by Superseded date Last modified date Modified by Last modification
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Storing ADRs > Position 5831
+</div>
+<div class="noteText">
+    Regardless of where ADRs are stored, each architecture decision should have its own file or wiki page.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Storing ADRs > Position 5840
+</div>
+<div class="noteText">
+    Figure 19-3. Example directory structure for storing ADRs
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Using ADRs for Standards > Position 5867
+</div>
+<div class="noteText">
+    Very few people like standards. Most times standards seem to be in place more for controlling people and the way they do things than anything useful. Using ADRs for standards can change this bad practice. For example, the Context section of an ADR describes the situation that is forcing the particular standard. The Decision section of an ADR can be used to not only indicate what the standard is, but more importantly why the standard needs to exist. This is a wonderful way of being able to qualify whether the particular standard should even exist in the first place. If an architect cannot justify the standard, then perhaps it is not a good standard to make and enforce. Furthermore, the more developers understand why a particular standard exists, the more likely they are to follow it (and correspondingly not challenge it). The Consequences section of an ADR is another great place an architect can qualify whether a standard is valid and should be made. In this section the architect must think about and document what the implications and consequences are of a particular standard they are making. By analyzing the consequences, the architect might decide that the standard should not be applied after all.
+</div><div class="sectionHeading">
+    20. Analyzing Architecture Risk
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 5895
+</div>
+<div class="noteText">
+    Every architecture has risk associated with it, whether it be risk involving availability, scalability, or data integrity. Analyzing architecture risk is one of the key activities of architecture. By continually analyzing risk, the architect can address deficiencies within the architecture and take corrective action to mitigate the risk.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Risk Matrix > Position 5912
+</div>
+<div class="noteText">
+    Figure 20-1. Matrix for determining architecture risk
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Risk Matrix > Position 5918
+</div>
+<div class="noteText">
+    When leveraging the risk matrix to qualify the risk, consider the impact dimension first and the likelihood dimension second.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Risk Assessments > Position 5927
+</div>
+<div class="noteText">
+    This basic risk assessment report format is illustrated in Figure 20-2, where light gray (1-2) is low risk, medium gray (3-4) is medium risk, and dark gray (6-9) is high risk. Usually these are color-coded as green (low), yellow (medium), and red (high), but shading can be useful for black-and-white rendering and for color blindness. Figure 20-2. Example of a standard risk assessment
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Risk Assessments > Position 5940
+</div>
+<div class="noteText">
+    suppose an architect is in a meeting for the purpose of presenting areas of the system that are high risk. Rather than presenting the risk assessment as illustrated in Figure 20-2, filtering can be used to only show the high risk areas (shown in Figure 20-3), improving the overall signal-to-noise ratio and presenting a clear picture of the state of the system (good or bad).
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Risk Assessments > Position 5960
+</div>
+<div class="noteText">
+    Figure 20-4. Showing direction of risk with plus and minus signs Occasionally, even the plus and minus signs can be confusing to some people. Another technique for indicating direction is to leverage an arrow along with the risk rating number it is trending toward. This technique, as illustrated in Figure 20-5, does not require a key because the direction is clear. Furthermore, the use of colors (red arrow for worse, green arrow for better) makes it even more clear where the risk is heading. Figure 20-5. Showing direction of risk with arrows and numbers The direction of risk can be determined by using continuous measurements through fitness functions described earlier in the book. By objectively analyzing each risk criteria, trends can be observed, providing the direction of each risk criteria.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Risk Storming > Position 5971
+</div>
+<div class="noteText">
+    No architect can single-handedly determine the overall risk of a system. The reason for this is two-fold. First, a single architect might miss or overlook a risk area, and very few architects have full knowledge of every part of the system. This is where risk storming can help.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Risk Storming > Position 5977
+</div>
+<div class="noteText">
+    While most risk storming efforts involve multiple architects, it is wise to include senior developers and tech leads as well. Not only will they provide an implementation perspective to the architectural risk, but involving developers helps them gain a better understanding of the architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Risk Storming > Position 5983
+</div>
+<div class="noteText">
+    An architecture diagram is used for both parts of the risk storming effort. For holistic risk assessments, usually a comprehensive architecture diagram is used, whereas risk storming within specific areas of the application would use a contextual architecture diagram. It is the responsibility of the architect conducting the risk storming effort to make sure these diagrams are up to date and available to all participants.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Risk Storming > Position 5992
+</div>
+<div class="noteText">
+    Figure 20-6. Architecture diagram for risk storming example Risk storming is broken down into three primary activities: Identification Consensus Mitigation
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Identification > Position 6016
+</div>
+<div class="noteText">
+    Whenever possible, restrict risk storming efforts to a single dimension. This allows participants to focus their attention to that specific dimension and avoids confusion about multiple risk areas being identified for the same area of the architecture.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Consensus > Position 6028
+</div>
+<div class="noteText">
+    Figure 20-7. Initial identification of risk areas
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Consensus > Position 6056
+</div>
+<div class="noteText">
+    For unproven or unknown technologies, always assign the highest risk rating (9) since the risk matrix cannot be used for this dimension.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Consensus > Position 6063
+</div>
+<div class="noteText">
+    Figure 20-8. Consensus of risk areas
+</div><div class="sectionHeading">
+    21. Diagramming and Presenting Architecture
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 6228
+</div>
+<div class="noteText">
+    if the architect shows a portion without indicating where it lies within the overall architecture, it confuses viewers. Representational consistency is the practice of always showing the relationship between parts of an architecture, either in diagrams or presentations, before changing views.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 6235
+</div>
+<div class="noteText">
+    Figure 21-1. Using representational consistency to indicate context in a larger diagram
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Tools > Position 6249
+</div>
+<div class="noteText">
+    Irrational Artifact Attachment …is the proportional relationship between a person’s irrational attachment to some artifact and how long it took to produce. If an architect creates a beautiful diagram using some tool like Visio that takes two hours, they have an irrational attachment to that artifact that’s roughly proportional to the amount of time invested, which also means they will be more attached to a four-hour diagram than a two-hour one.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Tools > Position 6255
+</div>
+<div class="noteText">
+    Using low-tech tools lets team members throw away what’s not right, freeing them to experiment and allow the true nature of the artifact emerge through revision, collaboration, and discussion.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Tools > Position 6262
+</div>
+<div class="noteText">
+    Powerful tools exist to create diagrams on every platform. While we don’t necessarily advocate one over another (we quite happily used OmniGraffle for all the diagrams in this book), architects should look for at least this baseline of features: Layers
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Tools > Position 6269
+</div>
+<div class="noteText">
+    Stencils/ templates
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Tools > Position 6274
+</div>
+<div class="noteText">
+    Magnets
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Diagram Guidelines > Position 6312
+</div>
+<div class="noteText">
+    Titles Make sure all the elements of the diagram have titles or are well known to the audience. Use rotation and other effects to make titles “sticky” to the thing they associate with and to make efficient use of space.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Diagram Guidelines > Position 6318
+</div>
+<div class="noteText">
+    Generally, one of the few standards that exists in architecture diagrams is that solid lines tend to indicate synchronous communication and dotted lines indicate asynchronous communication.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Diagram Guidelines > Position 6325
+</div>
+<div class="noteText">
+    Labels Architects should label each item in a diagram, especially if there is any chance of ambiguity for the readers.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Diagram Guidelines > Position 6329
+</div>
+<div class="noteText">
+    While we still favor monochrome, we use color when it helps distinguish one artifact from another.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Diagram Guidelines > Position 6336
+</div>
+<div class="noteText">
+    shapes are ambiguous for any reason, include a key on the diagram clearly indicating what each shape represents.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Presenting > Position 6347
+</div>
+<div class="noteText">
+    Neal, one of the coauthors of this book, wrote a book several years ago entitled Presentation Patterns (Addison-Wesley Professional), about taking the patterns/ anti-patterns approach common in the software world and applying it to technical presentations.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Presenting > Position 6351
+</div>
+<div class="noteText">
+    In a presentation, the presenter controls how quickly an idea is unfolding, whereas the reader of a document controls that. Thus, one of the most important skills an architect can learn in their presentation tool of choice is how to manipulate time.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Manipulating Time > Position 6368
+</div>
+<div class="noteText">
+    Similarly, many ideas are bigger than a single slide. Using subtle combinations of transitions and animations such as dissolve allows presenters to hide individual slide boundaries, stitching together a set of slides to tell a single story.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Incremental Builds > Position 6382
+</div>
+<div class="noteText">
+    When presenting, the speaker has two information channels: verbal and visual. By placing too much text on the slides and then saying essentially the same words, the presenter is overloading one information channel and starving the other. The better solution to this problem is to use incremental builds for slides, building up (hopefully graphical) information as needed rather than all at once.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Incremental Builds > Position 6397
+</div>
+<div class="noteText">
+    Using animations and transitions in conjunction with incremental builds allows the presenter to make more compelling, entertaining presentations.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Infodecks Versus Presentations > Position 6406
+</div>
+<div class="noteText">
+    If someone is going to flip through the deck like a magazine article, the author of the slides does not need to add any time elements. The other key difference between infodecks and presentations is the amount of material. Because infodecks are meant to be standalone, they contain all the information the creator wants to convey. When doing a presentation, the slides are (purposefully) meant to be half of the presentation, the other half being the person standing there talking!
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Slides Are Half of the Story > Position 6410
+</div>
+<div class="noteText">
+    A common mistake that presenters make is building the entire content of the presentation into the slides. However, if the slides are comprehensive, the presenter should spare everyone the time of sitting through a presentation and just email it to everyone as a deck!
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Invisibility > Position 6417
+</div>
+<div class="noteText">
+    Invisibility is a simple pattern where the presenter inserts a blank black slide within a presentation to refocus attention solely on the speaker.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Invisibility > Position 6421
+</div>
+<div class="noteText">
+    Thus, if a presenter wants to make a point, insert a blank slide—everyone in the room will focus their attention back on the speaker because they are now the only interesting thing in the room to look at.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Invisibility > Position 6424
+</div>
+<div class="noteText">
+    If an architect has a great idea but can’t figure out a way to present it effectively, they will never get a chance to realize that vision. Architecture requires collaboration; to get collaborators, architects must convince people to sign on to their vision. The modern corporate soapboxes are presentation tools, so it’s worth learning to use them well.
+</div><div class="sectionHeading">
+    22. Making Teams Effective
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 6433
+</div>
+<div class="noteText">
+    While this may sound obvious, too many times we’ve seen architects ignore development teams and work in siloed environments to create an architecture. This architecture then gets handed it off to a development team which then struggles to implement the architecture correctly. Being able to make teams productive is one of the ways effective and successful software architects differentiate themselves from other software architects.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Team Boundaries > Position 6445
+</div>
+<div class="noteText">
+    One of the roles of a software architect is to create and communicate the constraints, or the box, in which developers can implement the architecture. Architects can create boundaries that are too tight, too loose, or just right.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Team Boundaries > Position 6448
+</div>
+<div class="noteText">
+    The impact of having too tight or too loose of a boundary has a direct impact on the teams’ ability to successfully implement the architecture. Figure 22-1. Boundary types created by a software architect
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Architect Personalities > Position 6461
+</div>
+<div class="noteText">
+    There are three basic types of architect personalities: a control freak architect (Figure 22-2), an armchair architect (Figure 22-3), and an effective architect (Figure 22-5). Each personality matches a particular boundary type discussed in the prior section on team boundaries: control freak architects produce tight boundaries, armchair architects produce loose boundaries, and effective architects produce just the right kinds of boundaries.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Control Freak > Position 6480
+</div>
+<div class="noteText">
+    It is very easy to become a control freak architect, particularly when transitioning from developer to architect. An architect’s role is to create the building blocks of the application (the components) and determine the interactions between those components. The developer’s role in this effort is to then take those components and determine how they will be implemented using class diagrams and design patterns. However, in the transition from developer to architect, it is all too tempting to want to create the class diagrams and design patterns as well since that was the newly minted architect’s prior role.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Armchair Architect > Position 6517
+</div>
+<div class="noteText">
+    The biggest indicator that an architect might be falling into the armchair architect personality is not having enough time to spend with the development teams implementing the architecture (or choosing not to spend time with the development teams). Development teams need an architect’s support and guidance, and they need the architect available for answering technical or business-related questions when they arise. Other indicators of an armchair architect are following: Not fully understanding the business domain, business problem, or technology used Not enough hands-on experience developing software Not considering the implications associated with the implementation of the architecture solution
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Effective Architect > Position 6529
+</div>
+<div class="noteText">
+    An effective software architect produces the appropriate constraints and boundaries on the team, ensuring that the team members are working well together and have the right level of guidance on the team. The effective architect also ensures that the team has the correct and appropriate tools and technologies in place. In addition, they remove any roadblocks that may be in the way of the development teams reaching their goals.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - How Much Control? > Position 6541
+</div>
+<div class="noteText">
+    Becoming an effective software architect is knowing how much control to exert on a given development team. This concept is known as Elastic Leadership and is widely evangelized by author and consultant Roy Osherove.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - How Much Control? > Position 6548
+</div>
+<div class="noteText">
+    Team familiarity
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - How Much Control? > Position 6551
+</div>
+<div class="noteText">
+    Team size
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - How Much Control? > Position 6554
+</div>
+<div class="noteText">
+    Overall experience
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - How Much Control? > Position 6557
+</div>
+<div class="noteText">
+    Project complexity
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - How Much Control? > Position 6559
+</div>
+<div class="noteText">
+    Project duration
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - How Much Control? > Position 6564
+</div>
+<div class="noteText">
+    Consider a quick two-month project. Two months is not a lot of time to qualify requirements, experiment, develop code, test every scenario, and release into production. In this case the architect should act more as an armchair architect, as the development team already has a keen sense of urgency. A control freak architect would just get in the way and likely delay the project. Conversely, think of a project duration of two years. In this scenario the developers are relaxed, not thinking in terms of urgency, and likely planning vacations and taking long lunches.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - How Much Control? > Position 6576
+</div>
+<div class="noteText">
+    Figure 22-6. Scale for the amount of control
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - How Much Control? > Position 6581
+</div>
+<div class="noteText">
+    Table 22-1. Scenario 1 example for amount of control Factor Value Rating Personality Team familiarity New team members + 20 Control freak Team size Small (4 members)-20 Armchair architect Overall experience All experienced-20 Armchair architect Project complexity Relatively simple-20 Armchair architect Project duration 2 months-20 Armchair architect Accumulated score-60 Armchair architect
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Team Warning Signs > Position 6635
+</div>
+<div class="noteText">
+    Three factors come into play when considering the most effective development team size: Process loss Pluralistic ignorance Diffusion of responsibility Process loss, otherwise known as Brook’s law, was originally coined by Fred Brooks in his book The Mythical Man Month (Addison-Wesley). The basic idea of process loss is that the more people you add to a project, the more time the project will take. As illustrated in Figure 22-9, the group potential is defined by the collective efforts of everyone on the team. However, with any team, the actual productivity will always be less than the group potential, the difference being the process loss of the team. Figure 22-9. Team size impacts actual productivity (Brook’s law) An effective software architect will observe the development team and look for process loss. Process loss is a good factor in determining the correct team size for a particular project or effort. One indication of process loss is frequent merge conflicts when pushing code to a repository.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Team Warning Signs > Position 6655
+</div>
+<div class="noteText">
+    Pluralistic ignorance also occurs as the team size gets too big. Pluralistic ignorance is when everyone agrees to (but privately rejects) a norm because they think they are missing something obvious.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Team Warning Signs > Position 6667
+</div>
+<div class="noteText">
+    An effective software architect should continually observe facial expressions and body language during any sort of collaborative meeting or discussion and act as a facilitator if they sense an occurrence of pluralistic ignorance. In this case, the effective architect might interrupt and ask the person what they think about the proposed solution and be on their side and support them when they speak up.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Team Warning Signs > Position 6670
+</div>
+<div class="noteText">
+    third factor that indicates appropriate team size is called diffusion of responsibility. Diffusion of responsibility is based on the fact that as team size increases, it has a negative impact on communication. Confusion about who is responsible for what on the team and things getting dropped are good signs of a team that is too large.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Team Warning Signs > Position 6683
+</div>
+<div class="noteText">
+    An effective architect not only helps guide the development team through the implementation of the architecture, but also ensures that the team is healthy, happy, and working together to achieve a common goal. Looking for these three warning signs and consequently helping to correct them helps to ensure an effective development team.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Leveraging Checklists > Position 6711
+</div>
+<div class="noteText">
+    Processes that are good candidates for checklists are those that don’t have any procedural order or dependent tasks, as well as those that tend to be error-prone or have steps that are frequently missed or skipped. The key to making checklists effective is to not go overboard making everything a checklist.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Leveraging Checklists > Position 6717
+</div>
+<div class="noteText">
+    Don’t worry about stating the obvious in a checklist. It’s the obvious stuff that’s usually skipped or missed.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Leveraging Checklists > Position 6729
+</div>
+<div class="noteText">
+    The Hawthorne effect essentially means that if people know they are being observed or monitored, their behavior changes, and generally they will do the right thing.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Unit and Functional Testing Checklist > Position 6763
+</div>
+<div class="noteText">
+    Whenever someone from QA finds an issue with the code based on a particular test case, that test case should be added to this checklist.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Unit and Functional Testing Checklist > Position 6766
+</div>
+<div class="noteText">
+    Here are some of the items found in a typical unit and functional testing checklist: Special characters in text and numeric fields Minimum and maximum value ranges Unusual and extreme test cases Missing fields
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Providing Guidance > Position 6794
+</div>
+<div class="noteText">
+    A software architect can also make teams effective by providing guidance through the use of design principles. This also helps form the box (constraints), as described in the first section of this chapter, that developers can work in to implement the architecture. Effectively communicating these design principles is one of the keys to creating a successful team.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Providing Guidance > Position 6836
+</div>
+<div class="noteText">
+    Figure 22-13. Providing guidance for the layered
+</div><div class="sectionHeading">
+    23. Negotiation and Leadership Skills
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Negotiation and Facilitation > Position 6882
+</div>
+<div class="noteText">
+    Negotiation is one of the most important skills a software architect can have. Effective software architects understand the politics of the organization, have strong negotiation and facilitation skills, and can overcome disagreements when they occur to create solutions that all stakeholders agree on.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Negotiating with Business Stakeholders > Position 6898
+</div>
+<div class="noteText">
+    Leverage the use of grammar and buzzwords to better understand the situation.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Negotiating with Business Stakeholders > Position 6907
+</div>
+<div class="noteText">
+    Gather as much information as possible before entering into a negotiation.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Negotiating with Business Stakeholders > Position 6928
+</div>
+<div class="noteText">
+    When all else fails, state things in terms of cost and time. We recommend saving this negotiation tactic for last.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Negotiating with Business Stakeholders > Position 6934
+</div>
+<div class="noteText">
+    Leverage the “divide and conquer” rule to qualify demands or requirements.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Negotiating with Other Architects > Position 6955
+</div>
+<div class="noteText">
+    Always remember that demonstration defeats discussion.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Negotiating with Other Architects > Position 6960
+</div>
+<div class="noteText">
+    Avoid being too argumentative or letting things get too personal in a negotiation—calm leadership combined with clear and concise reasoning will always win a negotiation.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Negotiating with Developers > Position 6978
+</div>
+<div class="noteText">
+    When convincing developers to adopt an architecture decision or to do a specific task, provide a justification rather than “dictating from on high.”
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Negotiating with Developers > Position 6998
+</div>
+<div class="noteText">
+    Another effective negotiation tactic when negotiating with a developer or trying to convince them to accept a particular design or architecture decision they disagree with is to have the developer arrive at the solution on their own.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Negotiating with Developers > Position 7009
+</div>
+<div class="noteText">
+    If a developer disagrees with a decision, have them arrive at the solution on their own.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_aqua">Aqua</span>)
+ - The 4 C’s of Architecture > Position 7034
+</div>
+<div class="noteText">
+    Developers are drawn to complexity like moths to a flame—frequently with the same result.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - The 4 C’s of Architecture > Position 7051
+</div>
+<div class="noteText">
+    Figure 23-2. The 4 C’s of architecture
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Leading Teams by Example > Position 7104
+</div>
+<div class="noteText">
+    The moral of this story is that rank and title mean very little when it comes to leading people.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Leading Teams by Example > Position 7131
+</div>
+<div class="noteText">
+    Another basic people skills technique that can help build respect and healthy relationships between an architect and the development team is to always try to use the person’s name during a conversation or negotiation.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Leading Teams by Example > Position 7136
+</div>
+<div class="noteText">
+    If an architect meets someone for the first time or only occasionally, always shake the person’s hand and make eye contact.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Leading Teams by Example > Position 7177
+</div>
+<div class="noteText">
+    When a software architect observes someone struggling with a technical issue, they should step in and offer help or guidance. The same is true for nontechnical situations as well.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Leading Teams by Example > Position 7186
+</div>
+<div class="noteText">
+    For example, host a lunch session on a review of design patterns or the latest features of the programming language release. Not only does this provide valuable information to developers, but it also starts identifying you as a leader and mentor on the team.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Integrating with the Development Team > Position 7209
+</div>
+<div class="noteText">
+    When invited to a meeting, an effective software architect should always ask the meeting organizer why they are needed in that meeting. Many times architects get invited to meetings simply to keep them in the loop on the information being discussed. That’s what meeting notes are for.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Integrating with the Development Team > Position 7212
+</div>
+<div class="noteText">
+    Another related technique to help reduce the number of meetings an architect is involved in is to ask for the meeting agenda before accepting a meeting invite. The meeting organizer may feel that the architect is necessary, but by looking at the agenda, the architect can qualify whether they really need to be in the meeting or not.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_orange">Orange</span>)
+ - Integrating with the Development Team > Position 7217
+</div>
+<div class="noteText">
+    Ask for the meeting agenda ahead of time to help qualify if you are really needed at the meeting or not.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Integrating with the Development Team > Position 7231
+</div>
+<div class="noteText">
+    When calling a meeting, an architect should always try to schedule meetings either first thing in the morning, right after lunch, or toward the end of the day, but not during the day when most developers experience flow state.
+</div><div class="sectionHeading">
+    24. Developing a Career Path
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 7260
+</div>
+<div class="noteText">
+    An architect must continue to learn throughout their career. The technology world changes at a dizzying pace.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Position 7263
+</div>
+<div class="noteText">
+    Each architect should keep an eye out for relevant resources, both technology and business, and add them to their personal stockpile.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - The 20-Minute Rule > Position 7268
+</div>
+<div class="noteText">
+    As illustrated in Figure 2-6, technology breadth is more important to architects than depth. However, maintaining breadth takes time and effort, something architects should build into their day.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - The 20-Minute Rule > Position 7276
+</div>
+<div class="noteText">
+    One technique we use to maintain this balance is something we call the 20-minute rule. The idea of this technique, as illustrated in Figure 24-1, is to devote at least 20 minutes a day to your career as an architect by learning something new or diving deeper into a specific topic.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - The 20-Minute Rule > Position 7289
+</div>
+<div class="noteText">
+    Figure 24-1. The 20-minute rule
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - The ThoughtWorks Technology Radar > Position 7351
+</div>
+<div class="noteText">
+    Architects can use the tool described in “Open Source Visualization Bits” to build the same visuals used by ThoughtWorks as a way to organize their thinking about what to invest time in.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - The ThoughtWorks Technology Radar > Position 7372
+</div>
+<div class="noteText">
+    Architects should set aside time to broaden their technology portfolio, and building a radar provides a good scaffolding. However, the exercise is more important than the outcome. Creating the visualization provides an excuse to think about these things, and, for busy architects, finding an excuse to carve out time in a busy schedule is the only way this kind of thinking can occur.
+</div><div class="noteHeading">
+    Markierung(<span class="annotation_yellow">Gelb</span>)
+ - Parting Words of Advice > Position 7429
+</div>
+<div class="noteText">
+    So, our last parting words of advice: always learn, always practice, and go do some architecture!
+</div>
+        </div>
+    </body>
+</html>

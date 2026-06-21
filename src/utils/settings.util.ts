@@ -42,6 +42,14 @@ const config: SettingSchemaDesc[] = [
     title: "Sync highlight color",
     type: "boolean",
   },
+  {
+    default: "highlight",
+    description:
+        "String used to find highlight/annotation block in html export. Default is highlight.",
+    key: "highlightClassPrefix",
+    title: "Highlight HTML Class Prefix",
+    type: "string",
+  },
 ];
 
 /**
@@ -52,6 +60,7 @@ export const settings = {
   highlight: (): string => logseq.settings!["templateHighlight"] as string,
   pagePrefix: (): string => logseq.settings!["pagePrefix"] as string,
   pageProperties: (): string => logseq.settings!["pageProperties"] as string,
+  highlightClassPrefix: (): string => logseq.settings!["highlightClassPrefix"] as string,
   syncNotes: (): boolean => logseq.settings!["syncNotes"] as boolean,
   groupBySectionHeader: (): boolean =>
     logseq.settings!["groupBySectionHeader"] as boolean,

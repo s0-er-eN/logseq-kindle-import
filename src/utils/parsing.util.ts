@@ -1,5 +1,6 @@
 import { KindleBook } from "../models/KindleBook";
 import { KindleHighlight } from "../models/KindleHighlight";
+import {settings} from "./settings.util";
 
 export const parseKindleData = (content: string): KindleBook | null => {
   const dummyDom = document.createElement("html");
@@ -183,5 +184,6 @@ const getHightlightChapterFromHeading = (
 
 const isHighlightHeading = (el: Element | null): boolean => {
   if (!el) return false;
-  return !!el.querySelector('span[class^="highlight_"]');
+  const highlightClassPrefix = settings.highlightClassPrefix() ?? "highlight";
+  return !!el.querySelector('span[class^="'+highlightClassPrefix+'_"]');
 };
