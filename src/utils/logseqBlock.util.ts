@@ -30,6 +30,7 @@ export const createBlockOnCurrentPage = (
     properties: {
       ...(highlight.page && { page: highlight.page }),
       ...(highlight.location && { location: highlight.location }),
+      ...(highlight.color && settings.syncColor() && { color: highlight.color }),
       ...(highlight.note && settings.syncNotes() && { note: highlight.note }),
     },
   });
@@ -44,6 +45,7 @@ export const createChildHighlightBlock = (
     properties: {
       ...(highlight.page && { page: highlight.page }),
       ...(highlight.location && { location: highlight.location }),
+      ...(highlight.color && settings.syncColor() && { color: highlight.color }),
       ...(highlight.note && settings.syncNotes() && { note: highlight.note }),
     },
   });

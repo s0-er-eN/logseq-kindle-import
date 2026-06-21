@@ -34,6 +34,14 @@ const config: SettingSchemaDesc[] = [
     title: "Group highlights by chapter (add section headings)",
     type: "boolean",
   },
+  {
+    default: "true",
+    description:
+      "Set to true if you want to sync your highlight color",
+    key: "syncHighlightColor",
+    title: "Sync highlight color",
+    type: "boolean",
+  },
 ];
 
 /**
@@ -47,6 +55,7 @@ export const settings = {
   syncNotes: (): boolean => logseq.settings!["syncNotes"] as boolean,
   groupBySectionHeader: (): boolean =>
     logseq.settings!["groupBySectionHeader"] as boolean,
+  syncColor: (): boolean => logseq.settings!["syncHighlightColor"] as boolean,
 };
 
 /**
